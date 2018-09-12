@@ -13,6 +13,7 @@ import {
   type NavigationType,
   withNavigation,
 } from '@kiwicom/mobile-navigation';
+import RNLocalSearch from '@kiwicom/mobile-local-search';
 import idx from 'idx';
 
 import FromToRow from './FromToRow';
@@ -32,6 +33,18 @@ type PropsWithContext = {|
 |};
 
 class CityImageContainer extends React.Component<PropsWithContext> {
+  componentDidMount() {
+    const region = {
+      latitude: 50,
+      longitude: 14,
+      latitudeDelta: 0.3,
+      longitudeDelta: 0.3,
+    };
+    RNLocalSearch.searchForLocations('Marpek Whisky', region, (err, res) => {
+      console.log({ err, res });
+    });
+  }
+
   goToDetail = () => {
     const props = this.props;
 

@@ -6,6 +6,7 @@
 	objectVersion = 46;
 	objects = {
 /* Begin PBXBuildFile section */
+		0042D47E21481BD5006DAA28 /* libRNLocalSearch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0042D47D21481BAB006DAA28 /* libRNLocalSearch.a */; };
 		012E4C1BA8444C8182992EEB /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B11306CBC6D24D3C990EAC4B /* Ionicons.ttf */; };
 		038BD3170181472CA3083F7C /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6603DB7CD9F34D7AB1AD5B21 /* SimpleLineIcons.ttf */; };
 		03D20B5071D8480381221201 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 930DC3E79F864AEFBC5F91D7 /* Feather.ttf */; };
@@ -68,6 +69,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0042D47C21481BAB006DAA28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0042D47821481BAB006DAA28 /* RNLocalSearch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNLocalSearch;
+		};
 		215881F620C7FF140016707A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
@@ -102,6 +110,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0042D4762148187B006DAA28 /* libRNLocalSearch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRNLocalSearch.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0042D47821481BAB006DAA28 /* RNLocalSearch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNLocalSearch.xcodeproj; path = "../packages/local-search/ios/RNLocalSearch.xcodeproj"; sourceTree = "<group>"; };
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; path = main.jsbundle; sourceTree = "<group>"; };
 		04E0C4EE593813CA3FA1D99C /* libPods-RNKiwiMobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNKiwiMobile.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0520FD3BC77D396F74CF8285 /* libPods-reactNativeApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactNativeApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,6 +186,7 @@
 				63A8419F20C8538A0093183F /* MessageUI.framework in Frameworks */,
 				63A8419D20C853840093183F /* Social.framework in Frameworks */,
 				60854A62F6F281394EE676B5 /* libPods-reactNativeApp.a in Frameworks */,
+				0042D47E21481BD5006DAA28 /* libRNLocalSearch.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +208,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0042D47921481BAB006DAA28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0042D47D21481BAB006DAA28 /* libRNLocalSearch.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		13B07FAE1A68108700A75B9A /* RNPlayground */ = {
 			isa = PBXGroup;
 			children = (
@@ -263,6 +282,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				0042D47821481BAB006DAA28 /* RNLocalSearch.xcodeproj */,
 				13B07FAE1A68108700A75B9A /* RNPlayground */,
 				27E931B120AD96790053AE19 /* RNKiwiMobile */,
 				27E931D320ADA0600053AE19 /* RNNativePlayground */,
@@ -314,6 +334,7 @@
 		A2CAAD3C4D5834AF8638A878 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0042D4762148187B006DAA28 /* libRNLocalSearch.a */,
 				63A8419E20C8538A0093183F /* MessageUI.framework */,
 				63A8419C20C853840093183F /* Social.framework */,
 				27E931CC20AD9EF60053AE19 /* libPods-RNKiwiMobile.a */,
@@ -451,6 +472,12 @@
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0042D47921481BAB006DAA28 /* Products */;
+					ProjectRef = 0042D47821481BAB006DAA28 /* RNLocalSearch.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* reactNativeApp */,
@@ -459,6 +486,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0042D47D21481BAB006DAA28 /* libRNLocalSearch.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNLocalSearch.a;
+			remoteRef = 0042D47C21481BAB006DAA28 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		13B07F8E1A680F5B00A75B9A /* Resources */ = {

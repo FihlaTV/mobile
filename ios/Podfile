@@ -31,7 +31,8 @@ def react_native_pods()
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
   pod 'react-native-fetch-blob', :path => '../node_modules/react-native-fetch-blob'
   pod 'react-native-pdf', :path => '../node_modules/react-native-pdf'
-
+  
+  pod 'RNLocalSearch', :path => '../node_modules/@kiwicom/mobile-local-search/RNLocalSearch.podspec'
 end
 
 def react_native_modules()
